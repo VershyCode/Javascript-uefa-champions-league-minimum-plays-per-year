@@ -24,8 +24,8 @@ async function getTeams(year, k) {
         });
         let finalTeams = []; // [finalTeams] = the minimum(k) times that the [teamName] needs to be in [finalTeams].
         for(let team in contados){
-            console.log(team, 'Played on ', year, contados[team], ' Times');
             if(contados[team] >= k){
+                console.log(team, 'Played on ', year, contados[team], ' Times');
                 finalTeams.push(team);
             }else{
                 continue;
